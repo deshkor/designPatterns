@@ -59,10 +59,8 @@ func enemyFactory(t int) (Character, error) {
 			return Character{hp: 5, damage: 1, defense: 0, phrase : "weak"}, nil
 		case AVG:
 			return Character{hp: 8, damage: 4, defense: 3, phrase : "avg"}, nil
-			
 		case STRONG:
 			return Character{hp: 12, damage: 7, defense: 5, phrase : "strong"}, nil
-			
 		default:
 			return Character{}, errors.New("Invalid enemy type")
 	}
